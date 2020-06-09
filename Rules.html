@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>How to Play</title>
+    <style>
+        @keyframes drop {
+            0% {
+                opacity: 0;
+                /*transform: translateX(-80px);*/
+            }
+
+            100% {
+                opacity: 1;
+                /*transform: translateX(0px);*/
+            }
+        }
+
+        /*.bg-text {
+            height: 100%;
+            
+        }*/
+
+        .bg-image {
+            background-image: url(Welcome.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            filter: blur(4px);
+            -webkit-filter: blur(4px);
+            height: 100%;
+        }
+
+        .bg-text {
+            background-color: rgba(223, 58, 58, 0.315);
+            /* Fallback color */
+            background-color: rgba(255, 16, 16, 0.4);
+            /* Black w/opacity/see-through */
+            color: black;
+            font-weight: bolder;
+            font-style: italic;
+            border: 3px solid #bb1515;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Architects Daughter', cursive;
+            animation: drop 2.5s ease;
+        }
+
+        .cta {
+            padding-top: 0%;
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+        }
+
+        .cta-select {
+            border: 2px solid #cc3366;
+            background: red;
+            color: #050505;
+            width: 200px;
+            height: 50px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .cta-add {
+            background: #d4d806;
+            width: 200px;
+            height: 50px;
+            cursor: pointer;
+            font-size: 16px;
+            border: none;
+            color: red;
+        }
+
+        button {
+            position: relative;
+            width: 100px;
+
+
+            color: #555;
+            background: none;
+            border: none;
+            font-family: Lato;
+            font-size: 10px;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-weight: 300;
+            transition: background-color 0.3s, color 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-image"></div>
+    <div class="bg-text">
+        <h1 align="left"><em>GAME RULES:</em></h1><br>
+        <h1 style="font-size: 20px" align="left">
+            <p> 1. The game has 2 player's , playing in rounds.</p><br>
+            <p> 2. In each turn, a player rolls a dice as many times he wishes.
+                Each reult gets added to his 'ROUND' score.</p><br>
+            <p>3.But, if the player rolls a 1 on either of the die, all his 'ROUND' score gets lost.
+                After that it's the next player's turn.
+            </p><br>
+            <p> 4. The player can choose to 'Hold' that means his 'ROUND' score get's
+                added to his 'GLOBAL' score. After that, it's the next player's turn. </p><br>
+            <p> 5. The current set default score is 100 points. The first one to reach 100
+                on 'GLOBAL' score win's the GAME.
+                You can the change current default score to any point of your choice during
+                the GAME.
+            </p><br>
+        </h1>
+        <div class="cta">
+            <a href="proceed.html" alt="Not Available"><button class="cta-add">Go
+                    Back</button></a>
+            <a href="index.html" alt="Not Available"><button class="cta-select">Proceed to
+                    Play</button></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
