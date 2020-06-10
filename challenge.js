@@ -11,13 +11,13 @@ Game Rules:
 
 */
 alert("Go back and go through the rules, if you are new to the game!!!");
-var player1 = window.prompt("Enter first player's name");
-var player2 = window.prompt("Enter second player's name");
+//var player1 = window.prompt("Enter first player's name");
+//var player2 = window.prompt("Enter second player's name");
 
 var scores, roundScore, activePlayer, gamePlaying;
 init();
-document.querySelector("#name-0").textContent = player1;
-document.querySelector("#name-1").textContent = player2;
+//document.querySelector("#name-0").textContent = player1;
+//document.querySelector("#name-1").textContent = player2;
 //var lastDice;
 
 //console.log(dice);
@@ -134,8 +134,12 @@ function init() {
   document.getElementById("score-1").textContent = "0";
   document.getElementById("current-0").textContent = "0";
   document.getElementById("current-1").textContent = "0";
-  document.getElementById("name-0").textContent = player1;
-  document.getElementById("name-1").textContent = player2;
+  document.getElementById("name-0").textContent = window.prompt(
+    "Enter first player's name"
+  );
+  document.getElementById("name-1").textContent = window.prompt(
+    "Enter second player's name"
+  );
   document.querySelector(".player-0-panel").classList.remove("winner");
   document.querySelector(".player-1-panel").classList.remove("winner");
   document.querySelector(".player-0-panel").classList.remove("active");
