@@ -10,7 +10,7 @@ Game Rules:
 
 
 */
-alert("Go through rules, if you are new to the game!!!");
+alert("Go back and go through the rules, if you are new to the game!!!");
 var player1 = window.prompt("Enter first player's name");
 var player2 = window.prompt("Enter second player's name");
 
